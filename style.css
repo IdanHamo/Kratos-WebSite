@@ -281,15 +281,16 @@ $headerheight: 64px;*/
 }
 
 .form-div {
-  width: 70vw;
+  width: 20vw;
   min-height: 400px;
-  -webkit-margin-start: 15vw;
-          margin-inline-start: 15vw;
-  -webkit-margin-end: 15vw;
-          margin-inline-end: 15vw;
+  -webkit-margin-start: 40vw;
+          margin-inline-start: 40vw;
+  -webkit-margin-end: 40vw;
+          margin-inline-end: 40vw;
   -webkit-margin-before: 10%;
           margin-block-start: 10%;
   text-align: center;
+  background-color: rgba(138, 138, 138, 0.158);
 }
 
 .form-div input {
