@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  background-image: url(photos/5102637.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -70px;
+  font-family: "Rubik", sans-serif;
+}
+
+/*$sectionHeight: 450px;
+$mainDivWidth: 800px;
+
+$side-div-width: 300px;
+$side-div-height: 175px;
+$headerheight: 64px;*/
+.header {
+  background-image: url(photos/top-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-margin-start: 15vw;
+          margin-inline-start: 15vw;
+  -webkit-margin-end: 15vw;
+          margin-inline-end: 15vw;
+  height: 64px;
+}
+
+.header .header-div .img-div {
+  min-width: 150px;
+  height: 64px;
+  text-align: center;
+  background-color: #b30909;
+}
+
+.header .header-div .img-div a img {
+  width: 100%;
+}
+
+.header .header-div .div-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-start: 100px;
+          margin-inline-start: 100px;
+  word-spacing: 40px;
+}
+
+.header .header-div .div-nav .nav .links {
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.header .header-div .div-nav .nav .links:hover {
+  -webkit-box-shadow: 2px 2px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488, -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff, 12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b, -10px -7px 27px 1px #8e5cff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.section-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+  margin: 15vw;
+  -webkit-margin-before: 10vw;
+          margin-block-start: 10vw;
+  -webkit-margin-after: 10vw;
+          margin-block-end: 10vw;
+}
+
+.section-div a .main-div {
+  width: 800px;
+  height: 450px;
+  background-image: url(photos/Dragon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid gray;
+}
+
+.section-div a .side-div {
+  width: 300px;
+  height: 175px;
+  position: relative;
+  border: 1px solid gray;
+}
+
+.section-div a .side-div img {
+  width: 300px;
+  height: 175px;
+  position: relative;
+}
+
+.section-div a .side-div h3 {
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  color: white;
+}
+
+.section-div a .side-div p {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  color: white;
+}
+
+.section-div-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1450px;
+  margin: 15vw;
+  -webkit-margin-before: 5vh;
+          margin-block-start: 5vh;
+  -webkit-margin-after: 5vh;
+          margin-block-end: 5vh;
+}
+
+.section-div-two .main-div {
+  width: 800px;
+  height: 100%;
+  border: 1px solid gray;
+  position: relative;
+  background-color: #071042;
+}
+
+.section-div-two .main-div .head-div {
+  width: 100%;
+  height: 60px;
+  background-image: url(photos/top-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-div-two .main-div .head-div h3 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.section-div-two .main-div .maini-main {
+  text-align: center;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  -webkit-margin-end: 40px;
+          margin-inline-end: 40px;
+  margin-top: 40px;
+}
+
+.section-div-two .main-div .maini-main .main-img {
+  width: 100%;
+}
+
+.section-div-two .main-div .maini-main p {
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
+  text-align: left;
+  color: white;
+}
+
+.section-div-two .side-div {
+  width: 300px;
+  height: 175px;
+  position: relative;
+  border: 1px solid gray;
+  height: 200px;
+}
+
+.section-div-two .side-div .head-div-lang {
+  width: 100%;
+  height: 60px;
+  background-image: url(photos/top-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-div-two .side-div .head-div-lang h3 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.section-div-two .side-div .lang {
+  border: 2px solid black;
+  margin: 15px;
+  height: 100px;
+}
+
+.section-div-two .side-div .lang .flag-link {
+  text-decoration: none;
+  color: white;
+  -webkit-margin-start: 5;
+          margin-inline-start: 5;
+}
+
+.section-div-two .side-div .lang .flag-link .lang-flag {
+  width: 25px;
+  height: 25px;
+}
+
+.section-div-two .side-div .lang .flag-link .lang-flag .lang-name {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+
+.section-div-two .second-div {
+  -webkit-margin-before: 50px;
+          margin-block-start: 50px;
+  background-image: url(photos/discord2.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -10px;
+  text-align: center;
+}
+
+.section-div-two .second-div .discribe {
+  color: white;
+  text-decoration: none;
+}
+
+.section-div-two .nice-img {
+  -webkit-margin-before: 50px;
+          margin-block-start: 50px;
+  background-color: none;
+  height: 332.5px;
+  position: relative;
+  border: 0;
+}
+
+.section-div-two .nice-img img {
+  width: 570px;
+  position: absolute;
+  left: -130px;
+}
+/*# sourceMappingURL=style.css.map */

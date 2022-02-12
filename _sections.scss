@@ -1,0 +1,168 @@
+$sectionHeight: 450px;
+$mainDivWidth: 800px;
+
+$side-div-width: 300px;
+$side-div-height: 175px;
+
+$mainColor: white;
+@mixin side-divs {
+  width: $side-div-width;
+  height: $side-div-height;
+  position: relative;
+  border: 1px solid gray;
+}
+@mixin para {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.section-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: $sectionHeight;
+  margin: 15vw;
+  margin-block-start: 10vw;
+  margin-block-end: 10vw;
+
+  a {
+    .main-div {
+      width: $mainDivWidth;
+      height: $sectionHeight;
+      background-image: url(photos/Dragon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 1px solid gray;
+    }
+  }
+
+  a {
+    .side-div {
+      @include side-divs();
+      img {
+        width: $side-div-width;
+        height: $side-div-height;
+        position: relative;
+      }
+      h3 {
+        position: absolute;
+        top: 45px;
+        left: 40px;
+        color: $mainColor;
+      }
+      p {
+        position: absolute;
+        top: 90px;
+        left: 40px;
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.section-div-two {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1450px;
+  margin: 15vw;
+  margin-block-start: 5vh;
+  margin-block-end: 5vh;
+  .main-div {
+    width: $mainDivWidth;
+    height: 100%;
+    border: 1px solid gray;
+    position: relative;
+    background-color: rgb(7, 16, 66);
+
+    .head-div {
+      width: 100%;
+      height: 60px;
+      background-image: url(photos/top-header.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      h3 {
+        @include para();
+      }
+    }
+    .maini-main {
+      text-align: center;
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
+      margin-top: 40px;
+
+      .main-img {
+        width: 100%;
+      }
+      p {
+        margin-block-start: 30px;
+        text-align: left;
+        color: white;
+      }
+    }
+  }
+  .side-div {
+    @include side-divs();
+    height: 200px;
+    .head-div-lang {
+      width: 100%;
+      height: 60px;
+      background-image: url(photos/top-header.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      h3 {
+        @include para();
+      }
+    }
+    .lang {
+      border: 2px solid black;
+      margin: 15px;
+      height: 100px;
+
+      .flag-link {
+        text-decoration: none;
+        color: white;
+        margin-inline-start: 5;
+        .lang-flag {
+          width: 25px;
+          height: 25px;
+          .lang-name {
+            margin-inline-start: 10px;
+          }
+        }
+      }
+    }
+  }
+  .second-div {
+    margin-block-start: 50px;
+    background-image: url(photos/discord2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -10px;
+    text-align: center;
+    .discribe {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .nice-img {
+    margin-block-start: 50px;
+    background-color: none;
+    height: 1.9 * $side-div-height;
+    position: relative;
+    border: 0;
+    img {
+      width: 1.9 * $side-div-width;
+      position: absolute;
+      left: -130px;
+    }
+  }
+}
