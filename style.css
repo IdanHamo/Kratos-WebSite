@@ -279,4 +279,17 @@ $headerheight: 64px;*/
   position: absolute;
   left: -130px;
 }
+
+.form-div {
+  border: 10px solid black;
+  width: 70vw;
+  min-height: 400px;
+  -webkit-margin-start: 15vw;
+          margin-inline-start: 15vw;
+  -webkit-margin-end: 15vw;
+          margin-inline-end: 15vw;
+  -webkit-margin-before: 10%;
+          margin-block-start: 10%;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
