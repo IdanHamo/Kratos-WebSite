@@ -1,9 +1,12 @@
 const emailInput = document.getElementById("email");
 const emailInput2 = document.getElementById("email2");
 function email() {
-  if (emailInput.value === emailInput2.value) {
+  const emaily = emailInput.value;
+  const emaily2 = emailInput2.value;
+
+  if (emaily === emaily2) {
     alert("you register successfully");
-  } else if (emailInput !== emailInput2) {
+  } else {
     alert("email not match");
   }
 }
